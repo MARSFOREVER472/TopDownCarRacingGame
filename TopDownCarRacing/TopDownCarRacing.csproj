@@ -58,13 +58,14 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,9 +76,55 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\C_sharp_top_down_car_racing_game_resources_mooict.zip" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGrey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carOrange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carPink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bronze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
