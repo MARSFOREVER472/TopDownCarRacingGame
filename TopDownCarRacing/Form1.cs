@@ -16,5 +16,20 @@ namespace TopDownCarRacing
         {
             InitializeComponent();
         }
+
+        private void TeclaPresionada(object sender, KeyEventArgs e)
+        {
+            // EN INSTANTES...
+        }
+
+        private void TeclaSoltada(object sender, KeyEventArgs e)
+        {
+            // EN INSTANTES...
+        }
+
+        private void EventoTemporizadorJuego(object sender, EventArgs e)
+        {
+            // EN INSTANTES...
+        }
     }
 }

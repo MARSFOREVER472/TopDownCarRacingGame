@@ -28,41 +28,113 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Player = new System.Windows.Forms.PictureBox();
+            this.explosion = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.AI2 = new System.Windows.Forms.PictureBox();
+            this.AI1 = new System.Windows.Forms.PictureBox();
+            this.pistaCircuito2 = new System.Windows.Forms.PictureBox();
+            this.pistaCircuito1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.lblScore = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pistaCircuito1 = new System.Windows.Forms.PictureBox();
-            this.pistaCircuito2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.Player);
+            this.panel1.Controls.Add(this.explosion);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.AI2);
+            this.panel1.Controls.Add(this.AI1);
             this.panel1.Controls.Add(this.pistaCircuito2);
             this.panel1.Controls.Add(this.pistaCircuito1);
             this.panel1.Location = new System.Drawing.Point(20, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 532);
             this.panel1.TabIndex = 0;
+            // 
+            // Player
+            // 
+            this.Player.Image = global::TopDownCarRacing.Properties.Resources.carYellow;
+            this.Player.Location = new System.Drawing.Point(205, 375);
+            this.Player.Name = "Player";
+            this.Player.Size = new System.Drawing.Size(50, 99);
+            this.Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Player.TabIndex = 6;
+            this.Player.TabStop = false;
+            // 
+            // explosion
+            // 
+            this.explosion.Image = global::TopDownCarRacing.Properties.Resources.explosion;
+            this.explosion.Location = new System.Drawing.Point(75, 375);
+            this.explosion.Name = "explosion";
+            this.explosion.Size = new System.Drawing.Size(64, 64);
+            this.explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.explosion.TabIndex = 5;
+            this.explosion.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TopDownCarRacing.Properties.Resources.bronze;
+            this.pictureBox3.Location = new System.Drawing.Point(50, 200);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(250, 100);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // AI2
+            // 
+            this.AI2.Image = global::TopDownCarRacing.Properties.Resources.carGrey;
+            this.AI2.Location = new System.Drawing.Point(350, 25);
+            this.AI2.Name = "AI2";
+            this.AI2.Size = new System.Drawing.Size(50, 100);
+            this.AI2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.AI2.TabIndex = 3;
+            this.AI2.TabStop = false;
+            // 
+            // AI1
+            // 
+            this.AI1.Image = global::TopDownCarRacing.Properties.Resources.carGreen;
+            this.AI1.Location = new System.Drawing.Point(50, 25);
+            this.AI1.Name = "AI1";
+            this.AI1.Size = new System.Drawing.Size(50, 101);
+            this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.AI1.TabIndex = 2;
+            this.AI1.TabStop = false;
+            // 
+            // pistaCircuito2
+            // 
+            this.pistaCircuito2.Image = global::TopDownCarRacing.Properties.Resources.roadTrack;
+            this.pistaCircuito2.Location = new System.Drawing.Point(0, 0);
+            this.pistaCircuito2.Name = "pistaCircuito2";
+            this.pistaCircuito2.Size = new System.Drawing.Size(450, 532);
+            this.pistaCircuito2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pistaCircuito2.TabIndex = 1;
+            this.pistaCircuito2.TabStop = false;
+            // 
+            // pistaCircuito1
+            // 
+            this.pistaCircuito1.Image = global::TopDownCarRacing.Properties.Resources.roadTrack;
+            this.pistaCircuito1.Location = new System.Drawing.Point(0, -425);
+            this.pistaCircuito1.Name = "pistaCircuito1";
+            this.pistaCircuito1.Size = new System.Drawing.Size(450, 424);
+            this.pistaCircuito1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pistaCircuito1.TabIndex = 0;
+            this.pistaCircuito1.TabStop = false;
             // 
             // button1
             // 
@@ -94,75 +166,10 @@
     "nd survive as long as you can.\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pistaCircuito1
+            // gameTimer
             // 
-            this.pistaCircuito1.Image = global::TopDownCarRacing.Properties.Resources.roadTrack;
-            this.pistaCircuito1.Location = new System.Drawing.Point(0, -425);
-            this.pistaCircuito1.Name = "pistaCircuito1";
-            this.pistaCircuito1.Size = new System.Drawing.Size(450, 424);
-            this.pistaCircuito1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pistaCircuito1.TabIndex = 0;
-            this.pistaCircuito1.TabStop = false;
-            // 
-            // pistaCircuito2
-            // 
-            this.pistaCircuito2.Image = global::TopDownCarRacing.Properties.Resources.roadTrack;
-            this.pistaCircuito2.Location = new System.Drawing.Point(0, 0);
-            this.pistaCircuito2.Name = "pistaCircuito2";
-            this.pistaCircuito2.Size = new System.Drawing.Size(450, 532);
-            this.pistaCircuito2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pistaCircuito2.TabIndex = 1;
-            this.pistaCircuito2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TopDownCarRacing.Properties.Resources.carGreen;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 101);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TopDownCarRacing.Properties.Resources.carGrey;
-            this.pictureBox2.Location = new System.Drawing.Point(350, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 100);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::TopDownCarRacing.Properties.Resources.bronze;
-            this.pictureBox3.Location = new System.Drawing.Point(50, 200);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(250, 100);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::TopDownCarRacing.Properties.Resources.explosion;
-            this.pictureBox4.Location = new System.Drawing.Point(75, 375);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::TopDownCarRacing.Properties.Resources.carYellow;
-            this.pictureBox5.Location = new System.Drawing.Point(205, 375);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(50, 99);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
+            this.gameTimer.Interval = 20;
+            this.gameTimer.Tick += new System.EventHandler(this.EventoTemporizadorJuego);
             // 
             // Form1
             // 
@@ -176,15 +183,17 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Car Racing Game";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TeclaPresionada);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TeclaSoltada);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AI1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,10 +207,11 @@
         private System.Windows.Forms.PictureBox pistaCircuito1;
         private System.Windows.Forms.PictureBox pistaCircuito2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox AI2;
+        private System.Windows.Forms.PictureBox AI1;
+        private System.Windows.Forms.PictureBox Player;
+        private System.Windows.Forms.PictureBox explosion;
+        private System.Windows.Forms.Timer gameTimer;
     }
 }
 
