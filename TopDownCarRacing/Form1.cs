@@ -52,7 +52,17 @@ namespace TopDownCarRacing
 
         private void TeclaSoltada(object sender, KeyEventArgs e)
         {
-            // EN INSTANTES...
+            // Esto ayudará a que la tecla suelta del teclado pueda mantener en su posición original (No se mueve de un lado a otro).
+
+            if (e.KeyCode == Keys.Left) // Si suelta la tecla izquierda del teclado.
+            {
+                goLeft = false; // Se mantiene.
+            }
+
+            if (e.KeyCode == Keys.Right) // Si suelta la tecla derecha del teclado.
+            {
+                goRight = false; // Se mantiene.
+            }
         }
 
         // Evento del temporizador del juego.
