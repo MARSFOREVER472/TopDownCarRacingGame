@@ -35,7 +35,17 @@ namespace TopDownCarRacing
 
         private void TeclaPresionada(object sender, KeyEventArgs e)
         {
-            // EN INSTANTES...
+            // Esto ayudará de que la tecla presionada correctamente del teclado permita mover de izquierda a derecha.
+
+            if (e.KeyCode == Keys.Left) // Si presiona la tecla izquierda del teclado.
+            {
+                goLeft = true; // Va hacia la izquierda.
+            }
+
+            if (e.KeyCode == Keys.Right) // Si presiona la tecla derecha del teclado.
+            {
+                goRight = true; // Va hacia la derecha.
+            }
         }
 
         // Método de ejecución cuando suelta una tecla.

@@ -105,6 +105,7 @@
             this.AI2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.AI2.TabIndex = 3;
             this.AI2.TabStop = false;
+            this.AI2.Tag = "carRight";
             // 
             // AI1
             // 
@@ -115,6 +116,7 @@
             this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.AI1.TabIndex = 2;
             this.AI1.TabStop = false;
+            this.AI1.Tag = "carLeft";
             // 
             // pistaCircuito2
             // 
