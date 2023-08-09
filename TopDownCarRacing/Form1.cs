@@ -16,29 +16,66 @@ namespace TopDownCarRacing
 
         int roadSpeed; // Velocidad del circuito.
         int trafficSpeed; // Velocidad del tráfico de coches.
-        int playerSpeed = 12; // La velocidad del jugador comienza de 12 km/h.
+        int playerSpeed = 12; // La velocidad del jugador comienza en 12 km/h.
         int score; // Puntuación del juego.
         int carImage; // Cantidad de coches en enteros.
 
         Random rnd = new Random(); // Variable Aleatoria.
         Random carPos = new Random(); // La posición de los coches del circuito pueden variar.
         bool goLeft, goRight; // Dependerá de que los coches puedan moverse hacia la izquierda o hacia la derecha.
+
+        // Clase de la interfaz.
+
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); // Método de inicialización de los componentes de la interfaz.
         }
+
+        // Método de ejecución cuando presiona una tecla.
 
         private void TeclaPresionada(object sender, KeyEventArgs e)
         {
             // EN INSTANTES...
         }
 
+        // Método de ejecución cuando suelta una tecla.
+
         private void TeclaSoltada(object sender, KeyEventArgs e)
         {
             // EN INSTANTES...
         }
 
+        // Evento del temporizador del juego.
+
         private void EventoTemporizadorJuego(object sender, EventArgs e)
+        {
+            // EN INSTANTES...
+        }
+
+        // Nuevo método para los coches de la interfaz sabiendo que la posición de los coches pueden variar.
+
+        private void changeAICars(PictureBox tempCar)
+        {
+            // EN INSTANTES...
+        }
+
+        // Nuevo método para terminar una partida.
+
+        private void gameOver()
+        {
+            // EN INSTANTES...
+        }
+
+        // Nuevo método para reiniciar el juego.
+
+        private void resetGame()
+        {
+            // EN INSTANTES...
+        }
+
+        // Nuevo método para reconocimiento de archivos multimedia.
+
+        private void playSound()
         {
             // EN INSTANTES...
         }
