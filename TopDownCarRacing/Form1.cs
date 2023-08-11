@@ -102,9 +102,14 @@ namespace TopDownCarRacing
             AI1.Top += trafficSpeed; // La velocidad del tráfico para el coche 1 incrementa.
             AI2.Top += trafficSpeed; // La velocidad del tráfico para el coche 2 incrementa.
 
-            if (AI1.Top > 320) // Para el coche 1.
+            if (AI1.Top > 530) // Para el coche 1 del lado izquierdo.
             {
-                AI1.Top = -20; // Reduce a 20 su altura.
+                changeAICars(AI1); // Los coches pueden variar a su elección.
+            }
+
+            if (AI2.Top > 530) // Para el coche 2 del lado derecho.
+            {
+                changeAICars(AI2); // Los coches pueden variar a su elección.
             }
         }
 
@@ -112,7 +117,62 @@ namespace TopDownCarRacing
 
         private void changeAICars(PictureBox tempCar)
         {
-            // EN INSTANTES...
+            // Ahí se pueden cambiar cualquier vehículo según su posición en la que se encuentran las imágenes.
+
+            carImage = rnd.Next(1, 8); // Se pueden elegir 8 vehículos distintos.
+
+            switch (carImage)
+            {
+                case 1: // Para el vehículo 1.
+                    tempCar.Image = Properties.Resources.ambulance;
+                    break;
+
+                case 2: // Para el vehículo 2.
+                    tempCar.Image = Properties.Resources.carGreen;
+                    break;
+
+                case 3: // Para el vehículo 3.
+                    tempCar.Image = Properties.Resources.carGrey;
+                    break;
+
+                case 4: // Para el vehículo 4.
+                    tempCar.Image = Properties.Resources.carOrange;
+                    break;
+
+                case 5: // Para el vehículo 5.
+                    tempCar.Image = Properties.Resources.carPink;
+                    break;
+
+                case 6: // Para el vehículo 6.
+                    tempCar.Image = Properties.Resources.CarRed;
+                    break;
+
+                case 7: // Para el vehículo 7.
+                    tempCar.Image = Properties.Resources.carYellow;
+                    break;
+
+                case 8: // Para el vehículo 8.
+                    tempCar.Image = Properties.Resources.TruckBlue;
+                    break;
+
+                case 9: // Para el vehículo 9.
+                    tempCar.Image = Properties.Resources.TruckWhite;
+                    break;
+            }
+
+            tempCar.Top = carPos.Next(100, 400) * -1; // Posición en donde se encuentra cualquier coche.
+
+            // Para aquellos vehículos que van desde ambos lados.
+
+            if ((string)tempCar.Tag == "carLeft") // Para un vehículo que está en el lado izquierdo.
+            {
+                tempCar.Left = carPos.Next(5, 200);
+            }
+
+            if ((string)tempCar.Tag == "carRight") // Para un vehículo que está en el lado derecho.
+            {
+                tempCar.Left = carPos.Next(245, 422);
+            }
         }
 
         // Nuevo método para terminar una partida.
