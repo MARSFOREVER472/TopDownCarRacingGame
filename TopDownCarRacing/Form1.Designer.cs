@@ -32,19 +32,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Player = new System.Windows.Forms.PictureBox();
             this.explosion = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.logros = new System.Windows.Forms.PictureBox();
             this.AI2 = new System.Windows.Forms.PictureBox();
             this.AI1 = new System.Windows.Forms.PictureBox();
             this.pistaCircuito2 = new System.Windows.Forms.PictureBox();
             this.pistaCircuito1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.botonInicio = new System.Windows.Forms.Button();
             this.lblScore = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito2)).BeginInit();
@@ -56,7 +56,7 @@
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.Player);
             this.panel1.Controls.Add(this.explosion);
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.logros);
             this.panel1.Controls.Add(this.AI2);
             this.panel1.Controls.Add(this.AI1);
             this.panel1.Controls.Add(this.pistaCircuito2);
@@ -86,15 +86,15 @@
             this.explosion.TabIndex = 5;
             this.explosion.TabStop = false;
             // 
-            // pictureBox3
+            // logros
             // 
-            this.pictureBox3.Image = global::TopDownCarRacing.Properties.Resources.bronze;
-            this.pictureBox3.Location = new System.Drawing.Point(50, 200);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(250, 100);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
+            this.logros.Image = global::TopDownCarRacing.Properties.Resources.bronze;
+            this.logros.Location = new System.Drawing.Point(50, 200);
+            this.logros.Name = "logros";
+            this.logros.Size = new System.Drawing.Size(250, 100);
+            this.logros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.logros.TabIndex = 4;
+            this.logros.TabStop = false;
             // 
             // AI2
             // 
@@ -138,15 +138,15 @@
             this.pistaCircuito1.TabIndex = 0;
             this.pistaCircuito1.TabStop = false;
             // 
-            // button1
+            // botonInicio
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(190, 580);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 50);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
+            this.botonInicio.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonInicio.Location = new System.Drawing.Point(190, 580);
+            this.botonInicio.Name = "botonInicio";
+            this.botonInicio.Size = new System.Drawing.Size(100, 50);
+            this.botonInicio.TabIndex = 1;
+            this.botonInicio.Text = "Start";
+            this.botonInicio.UseVisualStyleBackColor = true;
             // 
             // lblScore
             // 
@@ -180,7 +180,7 @@
             this.ClientSize = new System.Drawing.Size(493, 764);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblScore);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.botonInicio);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -191,7 +191,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AI1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pistaCircuito2)).EndInit();
@@ -203,12 +203,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button botonInicio;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pistaCircuito1;
         private System.Windows.Forms.PictureBox pistaCircuito2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox logros;
         private System.Windows.Forms.PictureBox AI2;
         private System.Windows.Forms.PictureBox AI1;
         private System.Windows.Forms.PictureBox Player;

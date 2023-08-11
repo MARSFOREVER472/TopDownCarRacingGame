@@ -29,6 +29,7 @@ namespace TopDownCarRacing
         public Form1()
         {
             InitializeComponent(); // Método de inicialización de los componentes de la interfaz.
+            resetGame(); // Llamado del método anterior para reiniciar el juego.
         }
 
         // Método de ejecución cuando presiona una tecla.
@@ -69,7 +70,17 @@ namespace TopDownCarRacing
 
         private void EventoTemporizadorJuego(object sender, EventArgs e)
         {
-            // EN INSTANTES...
+            // Con este evento hará que el jugador se mueva hacia la izquierda o hacia la derecha.
+
+            if (goLeft == true && Player.Left > 5) // Si el jugador va hacia la izquierda.
+            {
+                Player.Left -= playerSpeed; // La velocidad del jugador desciende.
+            }
+
+            if (goRight == true && Player.Right < 422) // Si el jugador va hacia la derecha.
+            {
+                Player.Left += playerSpeed; // La velocidad del jugador aumenta.
+            }
         }
 
         // Nuevo método para los coches de la interfaz sabiendo que la posición de los coches pueden variar.
@@ -90,7 +101,31 @@ namespace TopDownCarRacing
 
         private void resetGame()
         {
-            // EN INSTANTES...
+            // Crearemos un procedimiento mucho más complejo.
+
+            botonInicio.Enabled = false; // Por el momento, la función de este componente no está activada.
+            explosion.Visible = false; // No se visualizará la explosión al generar un efecto especial cuando tropieza o colisiona con cualquier objeto.
+            logros.Visible = false; // No se visualizarán los premios al alcanzar los objetivos.
+            goLeft = false; // No se irá hacia el lado izquierdo del circuito.
+            goRight = false; // No se irá hacia el lado derecho del circuito.
+            score = 0; // La puntuación se inicializa en 0.
+            logros.Image = Properties.Resources.bronze; // La imagen es obtener un premio de bronce.
+
+            roadSpeed = 12; // La velocidad del circuito se inicializa en 12 km/h.
+            trafficSpeed = 15; // La velocidad del tráfico entre los coches se inicializa en 15 km/h.
+
+            // Para el coche 1:
+
+            AI1.Top = carPos.Next(200, 500) * -1; // Hacia adelante o hacia atrás.
+            AI1.Left = carPos.Next(5, 200); // Hacia los lados.
+
+            // Para el coche 2:
+
+            AI2.Top = carPos.Next(200, 500) * -1; // Hacia adelante o hacia atrás.
+            AI2.Left = carPos.Next(245, 422); // Hacia los lados.
+
+            gameTimer.Start(); // ¡¡¡¡QUE EMPIECE EL JUEGO!!!!.
+
         }
 
         // Nuevo método para reconocimiento de archivos multimedia.
