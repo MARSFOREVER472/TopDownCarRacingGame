@@ -29,6 +29,7 @@ namespace TopDownCarRacing
         public Form1()
         {
             InitializeComponent(); // Método de inicialización de los componentes de la interfaz.
+            resetGame(); // Llamado del método anterior para reiniciar el juego.
         }
 
         // Método de ejecución cuando presiona una tecla.
@@ -69,7 +70,17 @@ namespace TopDownCarRacing
 
         private void EventoTemporizadorJuego(object sender, EventArgs e)
         {
-            // EN INSTANTES...
+            // Con este evento hará que el jugador se mueva hacia la izquierda o hacia la derecha.
+
+            if (goLeft == true && Player.Left > 5) // Si el jugador va hacia la izquierda.
+            {
+                Player.Left -= playerSpeed; // La velocidad del jugador desciende.
+            }
+
+            if (goRight == true && Player.Right < 422) // Si el jugador va hacia la derecha.
+            {
+                Player.Left += playerSpeed; // La velocidad del jugador aumenta.
+            }
         }
 
         // Nuevo método para los coches de la interfaz sabiendo que la posición de los coches pueden variar.
