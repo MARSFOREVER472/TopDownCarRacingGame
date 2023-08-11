@@ -81,6 +81,21 @@ namespace TopDownCarRacing
             {
                 Player.Left += playerSpeed; // La velocidad del jugador aumenta.
             }
+
+            // Con esto haremos que la pista del circuito se mueva hacia abajo.
+
+            pistaCircuito1.Top += roadSpeed; // Para la pista 1.
+            pistaCircuito2.Top += roadSpeed; // Para la pista 2.
+
+            if (pistaCircuito2.Top > 425) // Para la pista 2.
+            {
+                pistaCircuito2.Top = -425; // Con esta pista se va encajando hacia al panel.
+            }
+
+            if (pistaCircuito1.Top > 425) // Para la pista 1.
+            {
+                pistaCircuito1.Top = -425; // Se repite el mismo procedimiento pero con otra pista.
+            }
         }
 
         // Nuevo método para los coches de la interfaz sabiendo que la posición de los coches pueden variar.
