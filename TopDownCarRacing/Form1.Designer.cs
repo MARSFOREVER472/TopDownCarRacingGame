@@ -153,7 +153,7 @@
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.Location = new System.Drawing.Point(185, 550);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(120, 27);
+            this.lblScore.Size = new System.Drawing.Size(159, 27);
             this.lblScore.TabIndex = 2;
             this.lblScore.Text = "Score: 0";
             // 

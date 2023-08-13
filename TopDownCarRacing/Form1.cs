@@ -70,6 +70,11 @@ namespace TopDownCarRacing
 
         private void EventoTemporizadorJuego(object sender, EventArgs e)
         {
+            // Editaremos un algoritmo para incrementar la puntuación.
+
+            lblScore.Text = "Score: " + score; // Score: 0 + 1 = 1.
+            score++;
+
             // Con este evento hará que el jugador se mueva hacia la izquierda o hacia la derecha.
 
             if (goLeft == true && Player.Left > 5) // Si el jugador va hacia la izquierda.
@@ -102,14 +107,48 @@ namespace TopDownCarRacing
             AI1.Top += trafficSpeed; // La velocidad del tráfico para el coche 1 incrementa.
             AI2.Top += trafficSpeed; // La velocidad del tráfico para el coche 2 incrementa.
 
-            if (AI1.Top > 530) // Para el coche 1 del lado izquierdo.
+            if (AI1.Top > 330) // Para el coche 1 del lado izquierdo.
             {
                 changeAICars(AI1); // Los coches pueden variar a su elección.
             }
 
-            if (AI2.Top > 530) // Para el coche 2 del lado derecho.
+            if (AI2.Top > 330) // Para el coche 2 del lado derecho.
             {
                 changeAICars(AI2); // Los coches pueden variar a su elección.
+            }
+
+            // Luego, haremos que el vehículo principal pueda detectar colisiones con algunos coches o camiones de la pista.
+
+            if (Player.Bounds.IntersectsWith(AI1.Bounds) || Player.Bounds.IntersectsWith(AI2.Bounds)) // Si choca con algunos coches o camiones de la pista.
+            {
+                gameOver(); // El juego se acaba llamando a la función ya creada anteriormente.
+            }
+
+            // Dependiendo de la puntuación obtenida, se obtendrán cualquier logro o medalla (bronce, plata y oro, respectivamente).
+
+            if (score > 40 && score < 500) // Si la puntuación obtenida está entre 40 y 500.
+            {
+                logros.Image = Properties.Resources.bronze; // Obtiene un premio de bronce.
+            }
+
+            if (score > 500 && score < 2000) // Si la puntuación obtenida está entre 500 y 2000.
+            {
+                logros.Image = Properties.Resources.silver; // Obtiene un premio de plata.
+
+                // Dependiendo de la velocidad de la pista y la de tráfico de vehículos, la dificultad puede aumentar.
+
+                roadSpeed = 20; // La velocidad de la pista se iniciará en 20 km/h.
+                trafficSpeed = 22; // La velocidad del tráfico de vehículos se iniciará en 22 km/h.
+            }
+
+            if (score > 2000) // Si la puntuación obtenida es mayor que 2000.
+            {
+                logros.Image = Properties.Resources.gold; // Obtiene un premio de oro.
+
+                // Dependiendo de la velocidad de la pista y la de tráfico de vehículos, la dificultad puede aumentar.
+
+                roadSpeed = 25; // La velocidad de la pista se iniciará en 25 km/h.
+                trafficSpeed = 27; // La velocidad del tráfico de vehículos se iniciará en 27 km/h.
             }
         }
 
@@ -179,7 +218,19 @@ namespace TopDownCarRacing
 
         private void gameOver()
         {
-            // EN INSTANTES...
+            // Por último, para finalizar, le agregaremos retoques finales al finalizar el juego.
+
+            playSound(); // Llamado del método anterior ya creado para probar efectos de audio al finalizar el juego.
+            gameTimer.Stop(); // Paraliza el temporizador.
+            explosion.Visible = true; // Al colisionar con un objeto, se creará un efecto explosivo.
+            Player.Controls.Add(explosion); // Se agregarán controles a la explosión.
+            explosion.Location = new Point(-8, 5); // Ubicación en donde se encuentra la explosión.
+            explosion.BackColor = Color.Transparent; // El color de la explosión será transparente.
+
+            logros.Visible = true; // Se verán los logros obtenidos al finalizar la partida.
+            logros.BringToFront(); // Se tiene que ver hacia al frente los logros.
+
+            botonInicio.Visible = true; // Se puede ver el botón de inicio al finalizar la partida.
         }
 
         // Nuevo método para reiniciar el juego.
