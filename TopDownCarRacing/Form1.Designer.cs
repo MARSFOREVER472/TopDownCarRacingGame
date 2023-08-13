@@ -147,6 +147,7 @@
             this.botonInicio.TabIndex = 1;
             this.botonInicio.Text = "Start";
             this.botonInicio.UseVisualStyleBackColor = true;
+            this.botonInicio.Click += new System.EventHandler(this.restartGame);
             // 
             // lblScore
             // 
