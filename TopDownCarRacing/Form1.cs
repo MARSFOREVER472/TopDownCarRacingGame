@@ -239,7 +239,7 @@ namespace TopDownCarRacing
         {
             // Crearemos un procedimiento mucho más complejo.
 
-            botonInicio.Enabled = false; // Por el momento, la función de este componente no está activada.
+            botonInicio.Enabled = false; // Ahora se activó esta función para reiniciar el juego.
             explosion.Visible = false; // No se visualizará la explosión al generar un efecto especial cuando tropieza o colisiona con cualquier objeto.
             logros.Visible = false; // No se visualizarán los premios al alcanzar los objetivos.
             goLeft = false; // No se irá hacia el lado izquierdo del circuito.
@@ -264,11 +264,19 @@ namespace TopDownCarRacing
 
         }
 
+        private void restartGame(object sender, EventArgs e)
+        {
+            resetGame(); // Llamado del método anterior para reiniciar el juego.
+        }
+
         // Nuevo método para reconocimiento de archivos multimedia.
 
         private void playSound()
         {
-            // EN INSTANTES...
+            // Finalmente, agregaremos un archivo multimedia para este método cuando choca con un vehículo en general.
+
+            System.Media.SoundPlayer playCrash = new System.Media.SoundPlayer(Properties.Resources.hit);
+            playCrash.Play();
         }
     }
 }
