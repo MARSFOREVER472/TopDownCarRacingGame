@@ -218,7 +218,19 @@ namespace TopDownCarRacing
 
         private void gameOver()
         {
-            // EN INSTANTES...
+            // Por último, para finalizar, le agregaremos retoques finales al finalizar el juego.
+
+            playSound(); // Llamado del método anterior ya creado para probar efectos de audio al finalizar el juego.
+            gameTimer.Stop(); // Paraliza el temporizador.
+            explosion.Visible = true; // Al colisionar con un objeto, se creará un efecto explosivo.
+            Player.Controls.Add(explosion); // Se agregarán controles a la explosión.
+            explosion.Location = new Point(-8, 5); // Ubicación en donde se encuentra la explosión.
+            explosion.BackColor = Color.Transparent; // El color de la explosión será transparente.
+
+            logros.Visible = true; // Se verán los logros obtenidos al finalizar la partida.
+            logros.BringToFront(); // Se tiene que ver hacia al frente los logros.
+
+            botonInicio.Visible = true; // Se puede ver el botón de inicio al finalizar la partida.
         }
 
         // Nuevo método para reiniciar el juego.
