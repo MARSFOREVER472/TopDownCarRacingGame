@@ -12,7 +12,7 @@
 
 2.- **_Cómo identificar la colisión entre varios objetos/cuadros de imágenes._**
 
-3.- _Cómo integrar eventos key down y key up en Windows Forms._
+3.- **_Cómo integrar eventos key down y key up en Windows Forms._**
 
 4.- Cómo crear un fondo de desplazamiento de paralaje en Windows Forms.
 
