@@ -14,7 +14,7 @@
 
 3.- **_Cómo integrar eventos key down y key up en Windows Forms._**
 
-4.- Cómo crear un fondo de desplazamiento de paralaje en Windows Forms.
+4.- _Cómo crear un fondo de desplazamiento de paralaje en Windows Forms._
 
 5.- Cómo crear un nivel de juego usando el componente de Visual Studio Panel.
 
