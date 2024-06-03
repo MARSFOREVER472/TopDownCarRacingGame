@@ -4,7 +4,7 @@
 
 - _Los principios del juego son que a medida que aumenta la puntuación, también lo hace la velocidad del juego, se termina una vez que golpeas a otro automóvil._
 - _En este tutorial estamos usando el lenguaje de programación Visual Studio y C# (sharp)._
-- Hemos prediseñado los activos del juego y puedes usar los tuyos, pero debes asegurarte de que todos tengan la misma altura y anchura.
+- _Hemos prediseñado los activos del juego y puedes usar los tuyos, pero debes asegurarte de que todos tengan la misma altura y anchura._
 
 **En este tutorial aprenderás:**
 
