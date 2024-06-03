@@ -20,7 +20,7 @@
 
 6.- **_Cómo cambiar dinámicamente las imágenes en los cuadros de imágenes._**
 
-7.- _Cómo crear y ejecutar funciones._
+7.- **_Cómo crear y ejecutar funciones._**
 
 8.- Cómo usar los booleanos.
 
