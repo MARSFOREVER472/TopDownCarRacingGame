@@ -10,7 +10,7 @@
 
 1.- **_Cómo crear un juego arcade en C#._**
 
-2.- _Cómo identificar la colisión entre varios objetos/cuadros de imágenes._
+2.- **_Cómo identificar la colisión entre varios objetos/cuadros de imágenes._**
 
 3.- Cómo integrar eventos key down y key up en Windows Forms.
 
