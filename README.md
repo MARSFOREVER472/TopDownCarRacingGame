@@ -26,4 +26,4 @@
 
 9.- **_Cómo crear un sistema de puntuación y recompensar a los jugadores adecuadamente._**
 
-10.- Cómo reproducir un archivo multimedia o de música .WAV usando solo códigos en C# (Sharp).
+10.- _Cómo reproducir un archivo multimedia o de música .WAV usando solo códigos en C# (Sharp)._
