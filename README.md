@@ -8,7 +8,7 @@
 
 **En este tutorial aprenderás:**
 
-1.- Cómo crear un juego arcade en C#.
+1.- _Cómo crear un juego arcade en C#._
 
 2.- Cómo identificar la colisión entre varios objetos/cuadros de imágenes.
 
