@@ -24,6 +24,6 @@
 
 8.- **_Cómo usar los booleanos._**
 
-9.- Cómo crear un sistema de puntuación y recompensar a los jugadores adecuadamente.
+9.- _Cómo crear un sistema de puntuación y recompensar a los jugadores adecuadamente._
 
 10.- Cómo reproducir un archivo multimedia o de música .WAV usando solo códigos en C# (Sharp).
