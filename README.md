@@ -16,7 +16,7 @@
 
 4.- **_Cómo crear un fondo de desplazamiento de paralaje en Windows Forms._**
 
-5.- _Cómo crear un nivel de juego usando el componente de Visual Studio Panel._
+5.- **_Cómo crear un nivel de juego usando el componente de Visual Studio Panel._**
 
 6.- Cómo cambiar dinámicamente las imágenes en los cuadros de imágenes.
 
