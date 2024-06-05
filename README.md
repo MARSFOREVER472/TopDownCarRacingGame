@@ -6,7 +6,7 @@
 - **_En este tutorial estamos usando el lenguaje de programación Visual Studio y C# (sharp)._**
 - **_Hemos prediseñado los activos del juego y puedes usar los tuyos, pero debes asegurarte de que todos tengan la misma altura y anchura._**
 
-**En este tutorial aprenderás:**
+**En este tutorial aprenderás a:**
 
 1.- **_Cómo crear un juego arcade en C#._**
 
