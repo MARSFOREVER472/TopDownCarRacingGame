@@ -8,7 +8,7 @@
 
 ### En este tutorial aprenderás a:
 
-1.- **_Cómo crear un juego tipo arcade en C#._**
+1.- **_Cómo crear un juego tipo arcade en C# con Windows Forms._**
 
 2.- **_Cómo identificar la colisión entre varios objetos/cuadros de imágenes._**
 
