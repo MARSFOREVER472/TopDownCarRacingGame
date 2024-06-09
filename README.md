@@ -18,7 +18,7 @@
 
 5.- **_Cómo crear un nivel de juego usando un componente de Visual Studio Panel._**
 
-6.- **_Cómo cambiar dinámicamente las imágenes en los cuadros de dichas imágenes._**
+6.- **_Cómo cambiar dinámicamente las fotos en los cuadros de dichas imágenes._**
 
 7.- **_Cómo crear y ejecutar funciones._**
 
