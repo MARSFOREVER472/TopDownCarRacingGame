@@ -22,7 +22,7 @@
 
 7.- **_Cómo crear y ejecutar funciones._**
 
-8.- **_Cómo usar los booleanos._**
+8.- **_Cómo usar booleanos._**
 
 9.- **_Cómo crear un sistema de puntuación y recompensar a los jugadores adecuadamente._**
 
