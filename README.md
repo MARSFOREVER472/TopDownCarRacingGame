@@ -2,7 +2,7 @@
 
 ### _En este tutorial, vamos a crear un juego completo de carreras de autos de arriba hacia abajo._
 
-- **_Los principios del juego son que, a medida que incrementa la puntuación, también lo hace con la velocidad del juego, se concluye la partida una vez que golpeas a cualquier automóvil._**
+- **_Los principios del juego son que, a medida que incrementa la puntuación, también lo hace con la velocidad del juego, se concluye la partida una vez que colisiones a cualquier automóvil._**
 - **_En este tutorial estaremos usando el lenguaje de programación Visual Studio en conjunto con C# (sharp)._**
 - **_Hemos prediseñado los assets del juego y puedes usar los suyos, pero trata de asegurarte de que todos tengan la misma medida, es decir, la misma altura y anchura._**
 
